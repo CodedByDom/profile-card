@@ -1,0 +1,164 @@
+html{
+    font-size: 16px;
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0;
+    background-color: hsl(185, 75%, 39%);
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+p{margin: 0;}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bg-tl{
+    width: 60.8125rem;
+    height: 60.8125rem;
+    position: absolute;
+    top: -31.8125rem;
+    left: -17.625rem;
+    background-size: contain;
+    
+}
+
+.bg-br{
+    width: 60.8125rem;
+    height: 60.8125rem;
+    position: absolute;
+    top: 23.5rem;
+    left: 43.1875rem;
+}
+
+.card{
+    width: 22rem;
+    height: 23.5rem;
+    border-radius: 15px;
+    background-image: url('/images/bg-pattern-card.svg');
+    box-shadow: 0px 0px 20px 1px hsla(0, 0%, 0%, 0.2);
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    justify-content: flex-end;
+    position: relative;
+    margin: 24px;
+    text-align: center;
+}
+
+.card-top{
+    /* background-color: black; */
+    flex-grow: 2;
+    flex-basis: 0px;
+}
+
+.card-top img{
+    position: absolute;
+    border-radius: 50%;
+    border: 6px solid white;
+    top: 4.375rem;
+    left: 7.625rem;
+    
+}
+
+.card-details {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 2;
+    background-color: white;
+    flex-basis: 0px;
+    border-bottom: 1px solid hsl(0, 0%, 59%);
+    ;
+}
+
+.card-stats{
+    display: flex;
+    flex-grow: 1;
+    background-color:white;
+    justify-content:space-evenly;
+    align-items: center;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    text-align: center;
+    
+}
+
+#name{
+    margin-top: 77px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+#age{
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+#location{
+    margin-bottom: 28px;
+    color: hsl(227, 10%, 46%);
+    font-size: 14px;
+}
+
+.stat{
+    font-size: 18px;
+    font-weight: 700;
+    /* margin-top: 28px; */
+    color:hsl(229, 23%, 23%);
+    margin: 0;
+    text-align: center;
+    width: 58px;
+}
+
+.stat p{
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-top: 10px;
+    color: hsl(227, 10%, 46%);
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 375px) {
+    .bg-tl{
+        width: 28.0625rem;
+        height: 28.0625rem;
+        top: -13.8125rem;
+        left:-13.0625rem;
+    }
+
+    .bg-br{
+        width: 33.375rem;
+        height: 33.375rem;
+        left: 164px;
+        bottom: 23.25px;
+    }
+
+    .card{ 
+        width: 20.375rem;
+        height: 23.4375rem;
+    }
+
+    .card img{
+        left: 109px;
+    }
+}
